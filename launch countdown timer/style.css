@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --Grayishblue: hsl(237, 18%, 59%);
+    --Softred: hsl(345, 95%, 68%);
+ 
+    
+    --White: hsl(0, 0%, 100%);
+    --Darkdesaturatedblue: hsl(236, 21%, 26%);
+    --Verydarkblue: hsl(235, 16%, 14%);
+    --Verydarkblue: hsl(234, 17%, 12%);
+}
+
+.stars {
+    position: absolute;
+}
+
+.hills {
+    position: absolute;
+    bottom: 0;
+}
+
+body {
+    Font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: var(--Verydarkblue);
+}
+/* container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+}
+
+.container h1 {
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+
+/* Countdown */
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.countdown div {
+    margin: 10px;
+}
+
+
+
+.countdown p {
+    padding: 20px;
+    font-size: 42px;
+    background-color: var(--Darkdesaturatedblue);
+    color: var(--Softred);
+    border-radius: 5px;
+}
+
+.countdown h3 {
+    font-size: 16px;
+    color: var( --Grayishblue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+/* socials */
+.socials {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+.socials ul {
+    display: flex;
+}
+.socials ul li {
+    margin: 0 20px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+    .stars img, .hills img {
+        width: 1600px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .stars img, .hills img {
+        width: 1920px;
+    }
+}
